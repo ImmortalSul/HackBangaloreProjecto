@@ -43,4 +43,3 @@ function HomePage() {
 }
 
 export default HomePage;
-// Compare this snippet from client/src/routes/homePage/homePage.scss:

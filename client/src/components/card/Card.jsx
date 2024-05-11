@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./card.scss";
 
@@ -6,7 +5,7 @@ function Card({ item }) {
   return (
     <div className="card">
       <Link to={`/${item.id}`} className="imageContainer">
-        <img src={item.img} alt="" />
+        <img src={item.images[0]} alt="" />
       </Link>
       <div className="textContainer">
         <h2 className="title">
@@ -20,12 +19,12 @@ function Card({ item }) {
         <div className="bottom">
           <div className="features">
             <div className="feature">
-              <img src="/wheelchair.png" alt="" />
-              <span>{item.WheelChair_Acesss} WheelChair Acesss</span>
+              <img src="/bed.png" alt="" />
+              <span>{item.bedroom} bedroom</span>
             </div>
             <div className="feature">
-              <img src="/elevator.png" alt="" />
-              <span>{item.Elevators} Elevators</span>
+              <img src="/bath.png" alt="" />
+              <span>{item.bathroom} bathroom</span>
             </div>
           </div>
           <div className="icons">
